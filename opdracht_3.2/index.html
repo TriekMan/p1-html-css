@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <h1>Boekingsformulier</h1>
+    </header>
+
+    <form>
+      <main>
+        <div>
+          <label for="voornaam">Voornaam: </label>
+          <input type="text" name="voornaam" id="voornaam" required />
+
+          <label for="Achternaam">Achternaam: </label>
+          <input type="text" name="achternaam" id="Achternaam" required />
+        </div>
+
+        <div>
+          <label for="wachtwoord">Wachtwoord: </label>
+          <input type="password" name="wachtwoord" id="wachtwoord" required />
+        </div>
+
+        <div>
+          <label for="land">Land: </label>
+          <input type="text" name="land" id="land" required />
+        </div>
+
+        <div>
+          <label for="stad">Stad: </label>
+          <input type="text" name="stad" id="stad" required />
+        </div>
+
+        <div>
+          <label for="postcode">Postcode: </label>
+          <input type="text" name="postcode" id="postcode" required />
+        </div>
+
+        <div>
+          <label for="straat">Straat: </label>
+          <input type="text" name="straat" id="straat" required />
+
+          <label for="huisnummer">Huisnummer</label>
+          <input type="number" min="1" required />
+        </div>
+
+        <div>
+          <label for="datum">Vertrek</label>
+          <input type="date" name="date" id="date" />
+
+          <label for="datum">Terugkomst</label>
+          <input type="date" name="date" id="date" />
+        </div>
+      </main>
+
+      <footer>
+        <button type="reset">Reset</button>
+        <button type="submit">Boek nu</button>
+      </footer>
+    </form>
+  </body>
 </html>
