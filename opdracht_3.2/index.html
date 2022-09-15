@@ -14,61 +14,81 @@
     <form>
       <main>
         <div>
-          <label for="voornaam">Voornaam: </label>
-          <input type="text" name="voornaam" id="voornaam" required />
+          <label for="fname">Voornaam: </label>
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            pattern="[A-Za-z]+$"
+            title="Geen cijfers"
+            required
+          />
 
-          <label for="Achternaam">Achternaam: </label>
-          <input type="text" name="achternaam" id="Achternaam" required />
+          <label for="lname">Achternaam: </label>
+          <input
+            type="text"
+            name="lname"
+            id="lname"
+            pattern="[A-Za-z]+$"
+            title="Geen cijfers"
+            required
+          />
         </div>
-
-        <div>
-          <label for="wachtwoord">Wachtwoord: </label>
-          <input type="password" name="wachtwoord" id="wachtwoord" required />
-        </div>
-
-        <div>
-          <label for="land">Land: </label>
-          <input type="text" name="land" id="land" required />
-        </div>
-
-        <div>
-          <label for="stad">Stad: </label>
-          <input type="text" name="stad" id="stad" required />
-        </div>
-
-        <div>
-          <label for="postcode">Postcode: </label>
-          <input type="text" name="postcode" id="postcode" required />
-        </div>
-
-        <div>
-          <label for="straat">Straat: </label>
-          <input type="text" name="straat" id="straat" required />
-
-          <label for="huisnummer">Huisnummer</label>
-          <input type="number" min="1" required />
-        </div>
-
-        <div>
-          <label for="datum">Vertrek</label>
-          <input type="date" name="date" id="date" />
-
-          <label for="datum">Terugkomst</label>
-          <input type="date" name="date" id="date" />
-        </div>
+        <br />
 
         <div>Geslacht</div>
         <div>
           <label for="man">Man</label>
-          <input type="radio" name="geslacht" id="geslacht" value="Man" />
+          <input type="radio" name="man" id="man" value="Man" checked />
 
-          <label for="vrouw">Vrouw</label>
-          <input type="radio" name="geslacht" id="geslacht" value="Vrouw" />
+          <label for="woman">Vrouw</label>
+          <input type="radio" name="woman" id="woman" value="Vrouw" />
         </div>
+        <br />
 
         <div>
-          <label for="vakantielanden">Vakantielanden</label>
-          <select name="vakantielanden" id="vakantielanden">
+          <label for="country">Land: </label>
+          <input type="text" name="country" id="country" required />
+        </div>
+        <br />
+
+        <div>
+          <label for="city">Stad: </label>
+          <input type="text" name="city" id="city" required />
+        </div>
+        <br />
+
+        <div>
+          <label for="pcode">Postcode: </label>
+          <input type="text" name="pcode" id="pcode" required />
+        </div>
+        <br />
+
+        <div>
+          <label for="street">Straat: </label>
+          <input type="text" name="street" id="street" required />
+
+          <label for="hnumber">Huisnummer</label>
+          <input type="number" min="1" required />
+        </div>
+        <br />
+
+        <div>
+          <label for="bsn">BSN-nummer</label>
+          <input
+            type="text"
+            minlength="9"
+            maxlength="9"
+            pattern="[0-9]+$"
+            title="Minimaal/Maximaal 9 cijfers"
+            required
+          />
+        </div>
+        <br />
+
+        <div>
+          <label for="vaclocs">Vakantielanden</label>
+          <select name="vaclocs" id="vaclocs">
             <option value="Spanje">Spanje</option>
             <option label="Duitsland" value="Duitsland"></option>
             <option label="Italië" value="Italië"></option>
@@ -78,6 +98,34 @@
             <option label="Kroatië" value="Kroatië"></option>
           </select>
         </div>
+        <br />
+
+        <div>
+          <label for="date">Vertrek</label>
+          <input type="date" name="date" id="date" min="2022-09-15" required />
+
+          <label for="date">Terugkomst</label>
+          <input type="date" name="date" id="date" required />
+        </div>
+        <br />
+
+        <div>
+          <label for="persons">Aantal personen</label>
+          <input type="number" min="1" required />
+        </div>
+        <br />
+
+        <div>
+          <label for="mail">E-mail: </label>
+          <input type="email" name="mail" id="mail" required />
+        </div>
+        <br />
+
+        <div>
+          <label for="pword">Wachtwoord: </label>
+          <input type="password" name="pword" id="pword" required />
+        </div>
+        <br />
       </main>
 
       <footer>
