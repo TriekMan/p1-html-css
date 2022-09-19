@@ -1,0 +1,27 @@
+.main h1{
+    font-size: 24px;
+    font-weight: bold;
+    color: blue;
+    font-style: italic;
+}
+h2{
+    font-size: 20px;
+    color: #0000ff;
+    font-weight: bold;
+}
+h3{
+    font-size: 16px;
+    color: teal;
+    font-weight: bold;
+}
+a{
+    color: #8A2BE2;
+    text-decoration: none;
+}
+p{
+    color: #4D4D4D;
+}
+.paragraph {
+    font-weight: bold;
+}
+
