@@ -1,16 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    
+}
 .main h1{
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: bold;
-    color: blue;
+    color: lightgrey;
     font-style: italic;
 }
 h2{
-    font-size: 20px;
+    font-size: 2rem;
     color: #0000ff;
     font-weight: bold;
 }
 h3{
-    font-size: 16px;
+    font-size: 1.6rem;
     color: teal;
     font-weight: bold;
 }
@@ -19,18 +28,28 @@ a{
     text-decoration: none;
 }
 p{
+    font-size: 1rem;
     color: #4D4D4D;
 }
 .paragraph {
     font-weight: bold;
-    color: white;
+    color: lightgrey;
 }
 header{
-    background-image: url("./img/controllerbg.jpg");
+    background-image: url("./img/headerbackground.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100vw;
     height: 33vh;
+}
+img{
+    width: 50vw;
+}
+article{
+    border: grey solid 2px;
+    border-radius: 10px;
+    border-left-width: 5px;
 }
 
 
