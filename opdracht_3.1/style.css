@@ -27,9 +27,10 @@
     display: flex;
     align-items: center;
     list-style-type: none;
+    margin-right: 2rem;
   }
   nav li {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     padding: 0 4rem 0 4rem;
   }
   nav a {
@@ -38,6 +39,23 @@
   }
   nav img {
     width: 5vw;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 20vw;
+    box-shadow: 0rem 0.5rem 1rem 0rem;
+    z-index: 1;
+  }
+  .dropdown-content a{
+    color: #00a8c7;
+    padding: 0.5rem 1rem;
+    display: block;
+    text-align: left;
+  }
+  .dropdown:hover .dropdown-content{
+    display: block;
   }
   .sectiontitle{
     background-image: url("./img/hacker2.jpg");
